@@ -1,0 +1,23 @@
+FACTORIAL ITERATION: 
+
+            function factorial(value){
+                let fact =1;
+                for(let i=1; i<=value; i++){
+                    fact = fact*i;
+                }
+                return fact;
+            }
+            let result = factorial(5);
+            console.log(result);
+
+FACTORIAL RECURSION: 
+
+            function factorialRecursive(num){
+                if(num == 1){
+                    return 1;
+                }else{
+                    return num*factorialRecursive(num-1);
+                }
+            }
+            let result = factorialRecursive(5);
+            console.log(result);

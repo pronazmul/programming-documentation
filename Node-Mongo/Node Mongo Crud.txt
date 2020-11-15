@@ -1,0 +1,166 @@
+Commands to install Node, Mongo, Nodemon, CORS, Body-Parser:
+    For Node:               	npm init
+    for express & Mongo:    	npm install express monogodb
+    For nodemon:           	npm install --save-dev nodemon
+    For CORS & Body-parser: 	npm install --save cors body-parser
+
+**Set Script in Packege.Json
+                    		"start": "nodemon index.js"
+** Initialize Application: 
+   			const express = require('express')
+			const app = express()
+
+    @app.listen(3000, ()=> console.log('Programme Is Listening'))
+
+**Cloud.mongoDB.com Operatons
+    DB Name:                practice-mongo   
+    DB UserName:        practice-mongo  
+    DB Password:          rWrChfTQDtH7rG8
+
+    @ Network Access: Dynamic For Practice Perpus
+    @ Connect: Set Username & Password
+    @ Connection Method: Connect to your Application
+    @ Include Full Driver Code
+    @ Set URI: Set Password & DB Name
+    @ Cluster > Cullection > Add My own Data > Setup DB Name
+    @ Set DB Name & Collection Name.
+    @ Use useUnifiedTopology: true { new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });}
+
+** Application Sent To another Directory....
+
+        app.get('/',(req,res)=>{
+            res.sendFile(__dirname+'/frontend.html')
+        })
+
+** Mongo Setup & Pass Single Data to MongoDB.....
+	
+	const MongoClient = require('mongodb').MongoClient;
+	const uri = "mongodb+srv://practice-mongo:rWrChfTQDtH7rG8@cluster0.mx72a.mongodb.net/practice-mongo?retryWrites=true&w=majority";
+	const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+        client.connect(err => {
+          const collection = client.db("practice-mongo").collection("crud")
+                collection.insertOne({name:"sania Akter", age:20, institute:"iubat"})
+                .then(result => {
+                  console.log("Single User Inserted Successful")
+                })
+        });
+
+** Dynamically Pass Form Data into Database......
+    @Create a form using two attribute: action & Form
+    @Emport Body-parser in your Application
+    @Specially use {
+                        app.use(bodyParser.urlecnoded({extanded:false}))
+                        app.use(bodyParser.Json())
+        } to get From Json Data By Body-parser...
+    
+    Operation: 
+                    app.post("/insertData",(req,res)=>{
+                    collection.insertOne(req.body)
+                        .then(result => {
+                        res.send("Data Successfully Submitted")
+                        })
+                    })
+
+
+** Manage Data Read From Serverside.........
+
+        app.get("/read",(req,res)=>{
+            collection.find({}).limit(2)
+            .toArray((err,document)=>{
+                res.send(document)
+            })
+        })
+
+        
+@ Load Data From UI .............
+
+        fetch('/read')
+        .then(res=> res.json())
+        .then(data=>{
+            data.forEach(user => {
+                const item = document.createElement('p')
+                item.innerHTML =`<strong>Name:</strong> ${user.userName} 
+                                <strong>Email:</strong> ${user.userEmail} 
+                                <button onclick='deleteUser("${user._id}")'class='btn btn-danger'>Delete</button>`
+                document.getElementById('text').appendChild(item)
+            })
+        })
+    
+    @Manage Data Delete From ServerSide ......
+
+        & import Object ID First...
+            const ObjectId = require('mongodb').ObjectId
+        
+        Operation:
+                app.delete("/delete/:id",(req,res)=>{
+                    collection.deleteOne({_id:ObjectId(req.params.id)})
+                    .then(result=>{
+                          res.sendFile(__dirname +'/frontend.html')
+                    })
+                })
+
+    @Delete Data From UI
+
+        const deleteUser = id => {
+            fetch(`/delete/${id}`,{method:'DELETE'})
+            .then(res=> window.location.href = '/')
+            // .then(data => console.log("Delete Success"))
+        }
+
+    @ Load Single Data For Update From UI...
+
+           const loadUser = id => {
+            fetch(`/load/${id}`)
+                .then(res => res.json())
+                .then(data => {
+                })
+           }
+
+    @ Mannage single data For UPdate From Backend...
+
+        app.get("/load/:id",(req,res)=>{
+            collection.find({_id:ObjectId(req.params.id)})
+            .toArray((err, document)=>{
+            res.send(document[0])
+            })
+        })
+
+
+    @ Update Data Request From frontend.....
+
+           const update = id =>{
+           const name = document.getElementById('name').value
+           const email = document.getElementById('email').value
+           const phone = document.getElementById('phone').value
+           const address = document.getElementById('address').value
+           const user = {id, name, email, phone, address}
+           
+           fetch(`/update/${id}`,{
+            method:'PATCH',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify(user)
+           })
+           .then(res=> {
+            read()
+            window.location.href = '/'
+           })
+
+    @ Manage Update User From Backend........
+
+        app.patch("/update/:id",(req,res)=>{
+        collection.updateOne({_id:ObjectId(req.params.id)},
+          {
+            $set:{
+              name:req.body.name,
+              email:req.body.email,
+              phone:req.body.phone,
+              address:req.body.address
+            }
+          })
+          .then(result=>{
+            res.redirect('/')
+          })
+      })
+
+      @ Specifically Get value: event.target.parentNode.style.display='none'

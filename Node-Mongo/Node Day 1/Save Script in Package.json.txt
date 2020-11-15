@@ -1,0 +1,10 @@
+
+Why: 
+	after installing nodemon we have to start our application named : nodemon file.js, We can
+	save a script in package.json to run our server npm start.
+
+Syntax: 
+ "scripts": {
+    "start":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },

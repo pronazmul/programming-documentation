@@ -1,0 +1,14 @@
+
+Remove Duplicate Value From An array:....
+let duplicateArray= [1,2,3,1,2,4,5,3,2];
+let uniqueArray= [];
+
+for (let i= 0; i < duplicateArray.length; i++){
+    let element = duplicateArray[i];
+    let check = uniqueArray.indexOf(element);
+
+    if(check == -1){
+        uniqueArray.push(element);
+    }
+}
+console.log(uniqueArray);

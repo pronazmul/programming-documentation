@@ -1,0 +1,28 @@
+
+....................Check File Extension Using Function..................
+
+		function checkExtension(ext){
+   			 if (ext=='jpg'||ext=='png'||ext=='gif'||ext=='jpeg'){return true;
+  				}else{return false;}
+		}
+
+		let ext = 'jpg';
+		let check = checkExtension(ext);
+
+		console.log(check);
+
+...............Check Extension Using IndexOf & If else...............
+		let ext = 'png';
+		let array =['jpg','png'];
+		let exist = array.indexOf(ext);
+
+			if (exist == -1){console.log("Invalid Format");}
+			else{console.log("Valid File Format");}
+
+..........Check Extension Using Turnary Operator.........
+
+	let ext = 'gif';
+	let permited = ['jpg','png','jpeg'];
+	let check =(permited.indexOf(ext) != -1)?"Valid Photo":"invalid Photo";
+	console.log(check);
+

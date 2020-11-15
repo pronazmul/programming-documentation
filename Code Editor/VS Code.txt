@@ -1,0 +1,30 @@
+				VS CODE
+
+Emmet: 
+	! Tab/Enter 		//For Html 5 Structure.
+	ul>li			//Child li inside parent ul
+	ul>li*5>a{Item $} 		//Child a inside li Contains item $
+	.container.row		//Row inside Parent Container
+	.container*2>.card>.card-body +.card-footer
+	.container#username
+
+Check Shortcuts: 
+	Ctrl+Shift+p  	
+	Alt+ select (Multi Cursor)
+	Multi _cursor+ home (cursor go start)
+	Multi _cursor+ end (cursor go end)
+	Alt – (Up or Bottom to up or bottom line)
+
+
+Extension Install: 
+	Code Runner 			//To run JS Scripts in output
+	Code Spell Checker 			//Check the Correct Spelling. 
+	Live Server			//To get live update of your html code. Right Click on your html file & Check Open with Live Server.
+	JavaScript (ES6) Code Snippets	//Es6 JS Code Snippet like Emmet
+	Es Lint				//Check JavaScript Functions.
+
+Replace All Shortcuts:		Ctrl + Shift + f 
+
+
+
+

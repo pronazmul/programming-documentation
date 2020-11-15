@@ -1,0 +1,9 @@
+Local Scope Vs Global Scope....
+
+Local Scope: Declare a variable using (let or var ) identifire
+ inside a fucntion that is local variable.
+
+Global Scope: Declare a varibale outside fucntion that
+ is global, Another way you can set a varriable
+inside a function using window.varName identifier 
+that is global variable. 

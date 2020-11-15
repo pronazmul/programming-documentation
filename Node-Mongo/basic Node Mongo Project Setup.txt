@@ -1,0 +1,63 @@
+Commands: 
+        npm init
+        npm install express mongodb body-parser cors dotenv
+        npm install nodemon --save-dev
+        npm install express-fileupload 
+
+Make Structure: 
+	Create : 		index.js | .env 
+	set Script: 	"start": "nodemon index.js"
+
+Env Folder Structure: 
+
+	
+
+Initialize NOde | Mongo | BOdy-Parser | CORS | File_UPLOAD: 
+
+        const express = require('express')
+        const app = express()
+        const port = 5000
+        const bodyParser = require('body-parser')
+        const cors = require('cors')
+        const fileUpload = require('express-fileupload')
+        const MongoClient = require('mongodb').MongoClient
+
+        app.use(bodyParser.json())
+        app.use(cors())
+        app.use(express.static('folderName')
+        app.use(fileUpload())
+
+        require('dotenv').config()
+        const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mx72a.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+        const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true});
+        client.connect(err => {
+        const collection = client.db(process.env.DB_NAME).collection(process.env.COLLECTION);
+
+        })
+
+
+MongoDB Connection Setup: 
+
+    const MongoClient = require('mongodb').MongoClient
+    const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mx72a.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+
+    client.connect(err => {
+    const appoinmentCollection = client.db(process.env.DB_NAME).collection('appoinments')
+        console.log("Database Connection Successful")
+    client.close();
+    })
+
+Simple Post Request Handle
+
+	app.post('/addAppoinment', (req,res)=>{
+    		appoinmentCollection.insertOne(req.body)
+    			.then(result=>{
+        			res.send(result.insertedCount>0)
+    			})
+	})
+
+
+
+        app.get('/',(req,res)=>res.send("Welcome Software developer"))
+        app.listen(port)

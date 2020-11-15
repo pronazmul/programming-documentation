@@ -1,0 +1,17 @@
+function woodCalculator(chair, table, bed){
+    let chairDataType = Number.isInteger(chair);
+    let tableDatatype = Number.isInteger(table);
+    let bedDatatype  = Number.isInteger(bed);
+
+    if(chairDataType==true && tableDatatype==true && bedDatatype ==true){
+        if(chair>=0 && table>=0 && bed>=0){
+            let totalWood = chair*1 + table*3 + bed*5;
+            return totalWood + " Cube Wood";
+        }else{return"Negative value is not acepted";}
+    }else{return"Input Should Be Integer";}
+}
+let chair = 5; 
+let table = 5;
+let bed = 6;
+let totalWood = woodCalculator(chair, table, bed);
+console.log(totalWood);

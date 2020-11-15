@@ -1,0 +1,7 @@
+             
+
+ <script>
+        document.getElementById('loginBtn').addEventListener('click', function(){
+                document.getElementById('loginArea').style.display='none';
+         })
+ </script>

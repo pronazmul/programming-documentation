@@ -1,0 +1,17 @@
+
+Select A Html Element: 
+
+document.getElementByID('paragraph').style.color="red";
+documnet.getElementByTagName('p');
+document.getElementByClassName('abc');
+
+Store A Html Element JavaScript Varriable:
+let paragraph = document.getElementByClassName('class');
+
+Style a Varriable: 
+paragraph.style.backgroundColor='red';
+
+Create Element
+documnet.createElement('p');
+
+

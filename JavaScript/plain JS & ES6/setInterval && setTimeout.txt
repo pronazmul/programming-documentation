@@ -1,0 +1,15 @@
+
+Set Interval : Programme Execute again & again After A Specific Time.
+Set TimeOut  : Programme Execute Once Only After A Specific Time. 
+
+//Example setTimeout()
+setTimeout(()=>{
+    console.log("Execute for Once After A Specific Time");
+}, 2000);
+
+
+//Example setInterval()
+
+setInterval(() => {
+    console.log("Execute Again & Again After A Specific Time");
+}, 1000);

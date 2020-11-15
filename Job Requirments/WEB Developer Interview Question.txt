@@ -1,0 +1,66 @@
+				Common Web Developer Interview Question.
+
+1. Q: Tell Me About Yourself?
+Ans:
+	I am a positive, enthusiastic, and competent web developer who a couple of years, has built up a
+	diverse range of skills, qualities, and attributes that guarantee I will perform highly in this role.
+	I have extensive experience working both alone and as part of a team on challenging web
+	development project that requires outstanding creative and technical capabilities.
+	I take my job as a web developer seriously and this means I always ensure my skills are kept up to
+	date within this rapidly changing industry.
+	If you hire me as your web developer, I assure you I will fit into your team quickly. The work I carry
+	out will be consistent to a first-class standard.
+
+2. Q: Why Do you want to work for our company as a web developer??
+Ans:
+	There are lots of web developer jobs out there, but I want one where I am going to be challenged
+	and where the skills and qualifications, I have built up are going to be put to good use.
+	I carried out lots of research into your organization prior to submitting my resume/CV, and the
+	work you do, the products and services you offer, and the way you support our employees tell me
+	this is a great place to work.
+	I am seeking long-term employment with the same company where I can really immerse myself
+	into their brand and their online ambitions, and this is genuinely the only place I want to work as a
+	web developer.
+
+3. Q: What are the responsibilities of a web developer?
+Ans:
+	A web developer designs, develops, enhances, tests, and deploys web applications with an end goal
+	of creating engaging and user-friendly site layout and function. A developer gathers and defines
+	requirements, maintains websites, troubleshoots and fixes bugs, follows best practices, and
+	collaborates with other teams.
+
+4. Q: In what programming languages are you proficient?
+Ans:
+	I’m proficient in HTML, CSS, JavaScript/ReactJS, PHP/Laravel, and SQL and I have beginner-level
+	proficiency in NoSQL and NodeJS/Express. I always ensure my skills are kept up to date within this
+	rapidly changing industry.
+
+5. Q: Can you show me an example of your code?
+Ans:
+	Absolutely I have a resume, you can access my GitHub account where you can see the code I am
+	currently working on.
+
+Question for Examiner:
+	➢ What do you like best about working here?
+	➢ What are some mistakes people have made in this position?
+	➢ What is a goal that you are currently working toward?
+	➢ How will my performance be evaluated?
+
+
+1. What is your greatest strength?
+2. What is your greatest weakness?
+3. Why should we hire you?
+4. Why do you want to work here?
+5. Tell me about a time you showed leadership?
+6. Tell me about a time you were successful on a team?
+7. What would your co-workers say about you?
+8. Why do you want to leave your current role?
+9. Describe your most challenging project?
+10. Tell me about something you’ve accomplished that you are proud of?
+11. Can you explain your employment gap?
+12. What are your salary expectations?
+13. What do you like to do outside of work?
+14. Tell me about a time you had to manage conflicting priorities?
+
+
+

@@ -1,0 +1,22 @@
+	why: used for moving text
+	scrollamout: defines scroll speed;
+	
+
+  
+  <marquee scrollamount="10"  direction="right">This scrolling text is created 
+		with HTML Marquee element and styled with CSS properties.</marquee>
+
+
+
+                <div class="row">
+                    <div class="col-md-2">Active Members</div>
+                    <div class="col-md-10">
+                        <marquee direction="left">
+                            <ul class="list-group list-group-horizontal-sm">
+                                <li class="list-group-item">Pro Nazmul</li>
+                                <li class="list-group-item">Designer Billal</li>
+                                <li class="list-group-item">Rabbil Soft</li>
+                            </ul>
+                        </marquee>
+                    </div>
+                </div>

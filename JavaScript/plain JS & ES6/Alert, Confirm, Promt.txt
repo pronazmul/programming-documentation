@@ -1,0 +1,12 @@
+...Alert....
+
+alert('Hey what are you doing');
+
+....confirm.... (Get Two option yes[true] cancel[false]);
+
+confirm('are you sure to delete this');
+
+....promt.....(To get a input data use promt);
+
+promt('Tell me your name');
+

@@ -1,0 +1,25 @@
+
+app.post('/addService', (req, res) => {
+    const file = req.files.file;
+    const title = req.body.title;
+    const description = req.body.description;
+    const newImg = file.data;
+    const encImg = newImg.toString('base64');
+    var image = {
+        contentType: file.mimetype,
+        size: file.size,
+        img: Buffer.from(encImg, 'base64')
+    };
+    serviceCollection.insertOne({ title, description, image })
+        .then(result => {
+            res.send(result.insertedCount > 0);
+        })
+})
+
+Base 64 Images in UI
+
+{`data:image/png;base64,${data.image.name}`}
+
+
+
+

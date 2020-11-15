@@ -1,0 +1,12 @@
+....Get Location && Path.....
+
+#Go to console: location (Enter);
+
+...Navigate History.....
+
+#Go to console: history.go(-1) / history.go(1)/ history.back();
+
+....Local Storage History....
+
+# Go to console: localStorage (Enter);
+

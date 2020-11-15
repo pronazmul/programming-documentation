@@ -1,0 +1,11 @@
+
+//Concate Two or More Array...
+	let list1 = ['Helal','Nurunnahar','Alamin','Aladdin','Ahad'];
+	let list2 = ['Shofiq','Amina','Sania','Zishan','Foysal'];
+	let list3 = ['Muhammod','Roxi','Sorif','Konok','Utsa'];
+
+//Concate An Array............
+	let addArray= [].concat(list1,list2,list3);
+//Or
+	let addArray = list.concat(list2,list3);
+	console.log(addArray);

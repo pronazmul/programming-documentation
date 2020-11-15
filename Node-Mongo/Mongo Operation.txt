@@ -1,0 +1,67 @@
+
+Insert Single Data
+
+                    client.connect(err => {
+                    const collection = client.db("burjarab").collection("booking");
+
+                        app.post("/book",(req,res)=>{
+                            collection.insertOne(req.body)
+                            .then(result=>res.send(result.insertedCount>0))
+                        })
+                    })
+
+
+Insert Many Data Together: 
+
+                    client.connect(err => {
+                    const collection = client.db("burjarab").collection("booking");
+
+                        app.post("/book",(req,res)=>{
+                              	collection.insertMany(req.body)
+                            .then(result=>res.send(result.insertedCount>0))
+                        })
+                    })
+
+Load All Data: 
+
+                        app.get("/book",(req,res)=>{
+                              	collection.find({})
+                            .toArray((err, documents)=>res.send(documents))
+                        })
+
+Load Single Data By Key: 
+
+	REQUEST: fetch(`http://localhost:5000/orderService/${key}`)
+                        app.get("/book/:key",(req,res)=>{
+                              	collection.find({key:req.params.key})
+                            .toArray((err, documents)=>res.send(documents))
+                        })
+
+Load A number of data using an array of keys: 
+
+                        app.post("/bookByKeys",(req,res)=>{
+                              	collection.find({key:{$in : req.body})
+                            .toArray((err, documents)=>res.send(documents))
+                        })
+
+Load Data Using Pertial Search:
+
+                        app.get("/book",(req,res)=>{
+                              	collection.find({email:{$regex : req.query.key})
+                            .toArray((err, documents)=>res.send(documents))
+                        })
+
+Delete Data: 
+       
+	 & import Object ID First...
+           		 const ObjectId = require('mongodb').ObjectId
+        
+        Operation:
+                app.delete("/delete/:id",(req,res)=>{
+                    collection.deleteOne({_id:ObjectId(req.params.id)})
+                    .then(result=>{
+                          res.sendFile(__dirname +'/frontend.html')
+                    })
+                })
+
+

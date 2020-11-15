@@ -1,0 +1,8 @@
+		CSS (CASCADING STYLE SHEET)
+Types of CSS: 
+	Inline CSS (Use Style Attribute in HTML tag).
+	Internal CSS (Use Style Tag in Head Section).
+	External CSS (Use External CSS File).
+
+
+

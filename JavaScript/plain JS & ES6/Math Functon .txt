@@ -1,0 +1,49 @@
+                        
+******************************Uses of Math Function***********************************
+
+
+            function makeAbsolute(){
+                  let number = -4;
+                  Math.abs(number)
+                  //Output 4;
+            }
+
+            function roundValueAvg(){
+                  let number = 5.49;
+                  Math.round(number)
+                  //Output 5;
+            }
+
+            function roundUpper(){
+                  let number = 5.19;
+                  Math.ceil(number)
+                  //Output 5
+            }
+
+            function roundLower(){
+                  let number = 5.67;
+                  Math.floor(number)
+                  //Output 5;
+            }
+
+            function randomValue(){
+                  Math.ceil(Math.random()*100)
+                  //Output 0 to 100
+            }
+
+**Generate Random Value minimum 4 Digit above 1000......
+
+	    function generatePin(){
+                   Math.round(Math.random()*2000+1000)
+                   //Output 1000 to max 3000;
+             }
+
+**Math.max Function in an array using Sparede Operator....
+
+    //Declare Maxium Numbers of An Array....
+        const numbers = [100,399,499,599,999];
+
+        const maxium = Math.max(...numbers);
+        console.log(maxium);
+
+

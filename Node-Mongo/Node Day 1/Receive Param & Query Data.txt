@@ -1,0 +1,14 @@
+Get Param Data While Request: 
+
+#Receive value:
+	app.get('/:id',(req, res)=>{
+    		res.send(req.params.id)
+		//Output Dynamic Value
+	})
+
+#Receive Query value
+	app.get('/:id?sort=desc',(req, res)=>{
+    		res.send(req.query.sort)
+		//Output Dynamic Query Value
+	})
+

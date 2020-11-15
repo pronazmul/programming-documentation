@@ -1,0 +1,11 @@
+         
+
+
+       function unknownValueArray(){
+                    let makeArray = [...arguments].join(' ');
+                    return makeArray;
+                }
+
+
+                let array = unknownValueArray('nazmul','Nuhidul','abdus subahan');
+                console.log(array);

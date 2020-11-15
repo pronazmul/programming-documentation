@@ -1,0 +1,9 @@
+..................................File Upload Configeration ....................................
+Xampp -> Apache -> config -> php.ini -> search on upload 
+
+set file upload = on,
+max upload size = ,
+file upload Location =,
+
+
+

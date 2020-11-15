@@ -1,0 +1,14 @@
+
+
+$('#register').click(function(){
+
+    let name = $('#regName').val();
+    let email = $('#regEmail').val();
+    let mobile = $('#regMobile').val();
+    let pass = $('#regPass').val();
+    let bkashno = $('#regBkashNumber').val();
+    let bkashtrxid = $('#regBkashTrxid').val();
+
+    userResisger(name,email,mobile,pass,bkashno,bkashtrxid);
+
+});

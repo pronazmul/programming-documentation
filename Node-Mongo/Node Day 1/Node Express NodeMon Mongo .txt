@@ -1,0 +1,38 @@
+NOde installation command: 
+	npm init
+Express installation command:
+	npm install express --save
+
+Import Express & Create Application: 
+	const express = require('express')
+	const app = express()
+
+Set Server Port With Message: 
+	app.listen(3000, ()=> console.log('Programme Is Listening'))
+
+Get Response & Show in Application: 
+	app.get('/', (req, res)=>{
+    		res.send("This is my first Programme In Node JS")
+	})
+
+Get Custom Server Api: 
+	app.get('/fruits', (req, res)=>{
+    		res.send("I Love Bananna")
+	})
+close Programme : ctrl + c
+
+
+Install Nodemon: 
+	npm install -g nodemon
+
+Run Application: 
+	nodemon file.js
+
+
+
+
+
+
+
+
+

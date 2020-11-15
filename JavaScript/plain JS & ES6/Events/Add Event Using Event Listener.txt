@@ -1,0 +1,15 @@
+
+
+            <body>
+                <h1>JavaScript Event Listener</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptate assumenda temporibus molestiae totam? Perspiciatis vitae aperiam laborum voluptatibus dolor.</p>
+                <button id ='change'>On Text Will Orange</button>
+            </body>
+            <script>
+                
+                document.getElementById('change').addEventListener('click',function(){
+                    document.body.style.color ='red';
+                });
+
+
+            </script>

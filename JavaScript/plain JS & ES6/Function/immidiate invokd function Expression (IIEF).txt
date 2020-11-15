@@ -1,0 +1,9 @@
+
+
+ Immidiate Invoked Fucntion Experssion........
+
+	(function(){
+
+   	 	let name= "Alauddin";
+    		console.log(name);
+	})();

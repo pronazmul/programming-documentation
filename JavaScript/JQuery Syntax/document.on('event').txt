@@ -1,0 +1,8 @@
+
+
+
+
+
+  $(document).on('click', '#approve', function(){
+    alert('Approve Button Clicked');
+  }); 

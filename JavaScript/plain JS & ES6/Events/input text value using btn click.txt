@@ -1,0 +1,5 @@
+             
+
+    document.getElementById('depositBtn').addEventListener('click', function(){
+       console.log(typeof parseFloat(document.getElementById('depositValue').value))
+    })

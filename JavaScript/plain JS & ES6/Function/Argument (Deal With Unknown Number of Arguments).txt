@@ -1,0 +1,30 @@
+        
+
+
+
+// Argumnets Deal with UnKnown Numbers of Arguments....
+
+        function sumAll(){
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                const number = arguments[i];
+                sum= sum+number;
+            }
+            return sum;
+        }
+        let result = sumAll(10,30,40,50);
+        console.log(result);
+
+// Deal with Unknown Numbers of string Parameters.
+           
+	 function unknownParameters(){
+                let namm = '';
+                for(let i = 0; i < arguments.length; i++){
+                let nammLength =  arguments[i];
+                namm = namm +" "+ nammLength;
+                }
+                return namm; 
+            }
+
+            let ab = unknownParameters('Nazmul','Huda','Alauddin');
+            console.log(ab);

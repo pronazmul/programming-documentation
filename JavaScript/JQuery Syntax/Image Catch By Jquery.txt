@@ -1,0 +1,10 @@
+
+
+$(document).ready( function(){
+		$('#upload').click(function(){
+			let img = $('#img').prop('files')[0];
+			let imgName = img.name;
+			let imgSize = img.size;
+			let imgExt = imgName.split('.').pop().toLowerCase();
+
+		});

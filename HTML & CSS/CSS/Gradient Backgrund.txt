@@ -1,0 +1,11 @@
+# Background Image With Liner Graient Background: 
+
+.division{
+    background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 55%,#3a4256 45%),
+    url('./Components/Images/bannarbg.png');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}

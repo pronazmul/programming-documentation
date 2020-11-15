@@ -1,0 +1,22 @@
+//False Values:
+	
+*0;
+*'';
+*null;
+*NaN;
+*undefined;
+*false;
+
+//True Values:
+
+*'0';
+*' ';
+*[];
+*{};
+
+// Undefined Values......
+
+* Not Return Function values.
+* Not set varriable values.
+* Call Function Without Pussing required Param.
+* Call Object With Unknown Property.

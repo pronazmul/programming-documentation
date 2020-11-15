@@ -1,0 +1,52 @@
+Create NOde Application & Create Custom Api:
+
+Firstly i've create two different project one is server &
+another client....
+
+Server: 
+	@install node: 
+		node init (Follow default command)
+
+	@install Express: 
+		npm install express --save
+
+	@Install Nodemon: 
+		npm install -g nodemon
+
+	@Run Application:
+		nodemon app.js
+
+	@Import Express & Create App: 
+		const express = require('express')
+		const app = express()
+
+	@Set Server Port With Message: 
+		app.listen(3000, ()=> console.log('Runninng'))
+
+	@Custom Api Create: 
+                            const user = [
+                                {id:1, name: 'Sania Akter', age: 20},
+                                {id:2, name: 'Nazmul Hdua', age:24}
+                           	 ]
+                            	app.get('/user/:id', (req, res)=>{
+                               	 	const id = req.params.id
+                                	res.send(user[id])
+                            	})
+
+	@Cross-Origin Resource Sharing (CORS):	
+		Installation: npm install cors
+		Use in Application: 
+			var express = require('express')
+			var cors = require('cors')
+			var app = express()
+			app.use(cors())
+
+
+Client: 		
+	@Load Data in Application
+	                 fetch('http://localhost:3000/user/1')
+                   	.then(res => res.json())
+                    	.then(response=> console.log(response))
+
+
+	

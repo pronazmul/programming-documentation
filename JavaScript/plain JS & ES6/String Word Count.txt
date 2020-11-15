@@ -1,0 +1,13 @@
+
+........String Word Count........
+let speech = "Hello Sania, Miss You Baby";
+
+let space = " ";
+for (let i = 0; i < speech.length; i++){
+    let element= speech[i];
+    if(element == " " && speech[i-1] != " "){
+        space++;
+    }
+}
+space++;
+console.log(space);

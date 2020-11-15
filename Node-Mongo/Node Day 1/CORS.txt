@@ -1,0 +1,14 @@
+			Cross Origin Resource Sharing
+Why: 
+	Cross-Origin Resource Sharing (CORS) is a mechanism that uses 
+	 access to selected resources from a different origin.
+
+Installation: npm install cors
+
+Use in Application: 
+
+	var express = require('express')
+	var cors = require('cors')
+	var app = express()
+
+	app.use(cors())

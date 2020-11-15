@@ -1,0 +1,14 @@
+
+Calculate Highest Number From an array...........
+
+let array = [20, 32, 43, 54, 65, 76, 87, 98];
+let max = array[0];
+
+for(let i=0; i<array.length; i++)
+{   
+    let value = array[i]; 
+    if(value>max){
+        max= value;
+    }
+}
+console.log(max);

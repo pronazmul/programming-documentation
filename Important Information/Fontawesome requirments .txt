@@ -1,0 +1,5 @@
+......................fontawesome Requirments.,...................
+
+	1. WEBFONTS folder.
+	2. all.min.css;
+	3.fontawesome.min.css;

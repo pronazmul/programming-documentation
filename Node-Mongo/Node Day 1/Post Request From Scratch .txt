@@ -1,0 +1,51 @@
+Create NOde Application & Create Custom Api:
+
+Firstly i've create two different project one is server &
+another client....
+
+Server: 
+	@install node: 
+		node init (Follow default command)
+
+	@install Express: 
+		npm install express --save
+
+	@Install Nodemon: 
+		npm install -g nodemon
+
+	@Run Application:
+		nodemon app.js
+
+	@Import Express & Create App: 
+		const express = require('express')
+		const app = express()
+
+	@Set Server Port With Message: 
+		app.listen(3000, ()=> console.log('Runninng'))
+
+	@Receive Request: 
+                            	app.post('/addUser', (req, res)=>{
+                               	 	console.log(req.body)
+                            	})
+
+	@Cross-Origin Resource Sharing (CORS):	
+		Installation: npm install cors
+		Use in Application: 
+			var express = require('express')
+			var cors = require('cors')
+			var app = express()
+			app.use(cors())
+	@ Install Body Parser:
+		command: 	npm install body-parser
+		Use in Application: 
+			var express = require('express')
+			var bodyParser= require('body-parser')
+			var app = express()
+			app.use(bodyParser.json())
+
+
+Post Request Form Postman: 		
+			@@@
+
+
+	

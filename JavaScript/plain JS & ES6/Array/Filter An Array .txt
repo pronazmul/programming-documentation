@@ -1,0 +1,22 @@
+
+
+
+    let array= [
+        'Nazmul',
+        null,
+        ,
+        'Sania',
+        'Alamin'
+    ];
+//Filter An Array Using filter Method.
+let filterArray = array.filter(Boolean);
+    console.log(filterArray);
+
+//Filter An Array Using Looping & if else Condition.   
+let filterArray = [];
+            for(i in array){
+                if(array[i]){
+                filterArray.push(array[i]);
+                }
+            }
+            console.log(filterArray);

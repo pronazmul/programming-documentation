@@ -1,0 +1,18 @@
+// Call Back Fucntion (fucntion transfer as paramenter)call Back Fucntion (Fucnction transfer As Parameter);
+
+
+	function callBack(name, age, tasks){
+    	console.log('Name is: ', name)
+    	console.log('Age is: ', age)
+    	tasks();
+	}
+	function washHands(){
+    		console.log("Wash Hands After Comming From Bathroom");
+	}
+ 		callBack('Nazmul', 24, washHands);
+
+ 	function takeShower(){
+    		console.log("Take Shower After Comming From Bazar");
+	}
+
+c		allBack('Nuhidul',22,takeShower);
